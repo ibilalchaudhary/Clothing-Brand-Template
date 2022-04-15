@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.nav__bar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav__bar:hover {
+  text-decoration: underline;
+  transition: 0.4s ease-in-out;
+}
+.home__img__container {
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home__sections {
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  margin: 2em 0em;
+  position: relative;
+  overflow: hidden;
+}
+.home__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms ease-in-out;
+}
+.home__img:hover {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.heading {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.header__icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  margin: 0px 6px;
+}
+.header__center__logo {
+  width: 100px;
+}
+.home__cards__container {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0px auto;
+  padding: 4em 2em;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.home__card {
+  width: 23%;
+  height: 330px;
+  position: relative;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.home__card:hover {
+  transform: scale(1.05);
+  transition: 300ms ease-in-out;
+}
+.home__card__img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.home__card__heading {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.home__card__para {
+  font-size: 13px;
+  margin-top: 3px;
+  font-weight: 500;
+  color: #000;
+}
+.home__card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  padding: 6px;
+  color: #fff;
+  font-weight: bold;
+}
+.home__card__like {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 6px;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgb(0, 0, 0, 0.2);
+}
